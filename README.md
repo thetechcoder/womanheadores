@@ -49,6 +49,13 @@ The app must be opened over **https** for the offline feature and install prompt
 
 On first open she creates a 6-digit lock code. It keeps casual eyes out. It does not encrypt her data and it cannot be recovered. If she forgets it she erases that copy and restores from a backup.
 
+## If the installed app says "This site can't be reached"
+
+- Open the address in the browser first and check it loads. Then remove the installed app, reload the page once while online, and install again from that exact address.
+- Install from the https address ending in your repository name, for example `https://YOUR-NAME.github.io/YOUR-REPO/`. Do not install from a `localhost`, preview or `http` address, or from a different repository name from the one you will share.
+- The repository must be public (or on a plan that allows private Pages), and the Pages deployment must show green in the Actions tab.
+- After updating files, make sure `sw.js` has a new cache name, then open the app online twice.
+
 ## Her data belongs to the address
 
 Her progress lives in the browser storage of the exact web address she uses. That has three consequences:
